@@ -20,12 +20,11 @@ on:
       HTTP_PRIVATE_PORT:
         required: true
         type: string                        
+    secrets:
       CLOUDHUB_USERNAME:
-        required: true
-        type: string
+        required: true    
       CLOUDHUB_PASSWORD:
         required: true
-        type: string
 jobs:
   build:
     runs-on: ubuntu-latest
