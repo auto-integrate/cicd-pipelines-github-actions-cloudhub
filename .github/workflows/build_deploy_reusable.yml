@@ -20,7 +20,6 @@ on:
       HTTP_PRIVATE_PORT:
         required: true
         type: string                        
-    secrets:
       CLOUDHUB_USERNAME:
         required: true    
       CLOUDHUB_PASSWORD:
