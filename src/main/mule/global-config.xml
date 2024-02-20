@@ -19,5 +19,4 @@ http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/
 			</tls:context>
 		</http:listener-connection>
 	</http:listener-config>
-<import doc:name="Import" doc:id="83743815-c4c7-4e44-807e-180759aa012f" file="global-error-handlers.xml" />
 </mule>
