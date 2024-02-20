@@ -21,9 +21,11 @@ on:
         required: true
         type: string                        
       CLOUDHUB_USERNAME:
-        required: true    
+        required: true
+        type: string
       CLOUDHUB_PASSWORD:
         required: true
+        type: string
 jobs:
   build:
     runs-on: ubuntu-latest
