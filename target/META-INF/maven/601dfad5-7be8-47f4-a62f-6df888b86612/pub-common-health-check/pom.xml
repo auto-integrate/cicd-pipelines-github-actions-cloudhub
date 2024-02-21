@@ -132,9 +132,6 @@
 							<format>html</format>
 						</formats>
 					</coverage>
-					<ignoreFiles>
-						<ignoreFile>global-error-handlers.xml</ignoreFile>
-					</ignoreFiles>
 				</configuration>
 			</plugin>
 		</plugins>
