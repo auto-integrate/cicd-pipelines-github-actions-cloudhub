@@ -99,7 +99,7 @@ jobs:
         
     - name: Deploy for ${{ github.event.ref }} branch
       run: |
-        mvn -U -V -e -B -DskipTests deploy --file pom.xml -DmuleDeploy -Dmule.encryption.key \
+        mvn -U -V -e -B -DskipTests deploy --file pom.xml -DmuleDeploy \
         -Danypoint.userName=${{ secrets.CLOUDHUB_USERNAME}} \
         -Danypoint.password=${{ secrets.CLOUDHUB_PASSWORD}} \
         -Dcloudhub.environment=${{ inputs.CLOUDHUB_ENVIRONMENT}} \
