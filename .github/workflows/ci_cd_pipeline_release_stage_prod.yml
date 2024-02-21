@@ -30,6 +30,7 @@ jobs:
     secrets:
       CLOUDHUB_USERNAME: ${{ secrets.CLOUDHUB_USERNAME }}       
       CLOUDHUB_PASSWORD : ${{ secrets.CLOUDHUB_PASSWORD }}
+      CLOUDHUB_KEY : ${{ secrets.CLOUDHUB_KEY }}
 
   prod:
     if: github.event.inputs.releaseType == 'prod'  
@@ -45,3 +46,4 @@ jobs:
     secrets:
       CLOUDHUB_USERNAME: ${{ secrets.CLOUDHUB_USERNAME }}        
       CLOUDHUB_PASSWORD : ${{ secrets.CLOUDHUB_PASSWORD }}
+      CLOUDHUB_KEY : ${{ secrets.CLOUDHUB_KEY }}
