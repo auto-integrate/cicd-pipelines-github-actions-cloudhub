@@ -25,6 +25,8 @@ on:
         required: true    
       CLOUDHUB_PASSWORD:
         required: true
+      CLOUDHUB_KEY:
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -107,3 +109,4 @@ jobs:
         -Dcloudhub.workers=${{ inputs.CLOUDHUB_WORKERS}} \
         -Dcloudhub.region=${{ inputs.CLOUDHUB_REGION}} \
         -Dhttp.private.port=${{ inputs.HTTP_PRIVATE_PORT}} \
+        -Dmule.encryption.key=${{ secrets.CLOUDHUB_KEY}}
